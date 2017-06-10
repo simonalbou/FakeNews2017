@@ -83,9 +83,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Controls\ClickableNews.cs" />
     <Compile Include="Assets\Controls\CustomMouseLook.cs" />
     <Compile Include="Assets\Controls\StareCamera.cs" />
+    <Compile Include="Assets\NewsObjects\ClickableNews.cs" />
+    <Compile Include="Assets\NewsObjects\NewsPoolManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

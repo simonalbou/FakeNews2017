@@ -13,15 +13,11 @@ public class StareCamera : MonoBehaviour
 	void Update ()
 	{
 		if (Input.GetMouseButtonDown(0)) Click();
-
-		Debug.DrawRay(self.position, self.forward);
 	}
 
 	void Click()
 	{
 		Ray ray = new Ray(self.position, self.forward);
-
-		Debug.Log("test");
 
 		if (!Physics.Raycast(ray, out hit, range, layerMask)) return;
 		
