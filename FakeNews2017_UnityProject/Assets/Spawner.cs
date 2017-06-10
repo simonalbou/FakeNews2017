@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour 
 {
+	public static Spawner instance = null;
+
 	public GameObject screenPrefab = null;
 	public float angle = 20f;
 	public float radius = 1f;
@@ -14,20 +16,19 @@ public class Spawner : MonoBehaviour
 	Transform _spawnroot = null;
 	Vector3[] _spawnPositions = null;
 
-	// Use this for initialization
-	void Start () 
+	void Awake ()
 	{
 		_spawnroot = transform;
 
 		InitSpawn ();
 
-		StartCoroutine (SpawnAfterSeconds ());
+		instance = this;
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-
+	// Use this for initialization
+	void Start () 
+	{
+		//StartCoroutine (SpawnAfterSeconds ());
 	}
 
 	IEnumerator SpawnAfterSeconds()
@@ -91,5 +92,22 @@ public class Spawner : MonoBehaviour
 		}
 	}
 
+	public Vector3[] GetPositions (int numberOfPosition)
+	{
+		Vector3[] positions = new Vector3[numberOfPosition];
+		List<Vector3> pool = new List<Vector3> (_spawnPositions);
 
+		numberOfPosition = Mathf.Min (numberOfPosition, pool.Count);
+
+		for (int i = 0; i < numberOfPosition; i++)
+		{
+			int index = Random.Range (0, pool.Count);
+
+			positions [i] = pool [index];
+
+			pool.RemoveAt (index);
+		}
+
+		return positions;
+	}
 }
