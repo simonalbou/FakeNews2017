@@ -18,6 +18,7 @@ public class NewsPoolManager : MonoBehaviour
 	// pooling
 	public static NewsPoolManager instance;
 	public Spawner spawner;
+	public StareCamera inputHolder;
 	public ClickableNews[] pool;
 
 	// day manager
@@ -42,14 +43,11 @@ public class NewsPoolManager : MonoBehaviour
 		curDay = 0;
 		curActivatedNews = 0;
 
-		for (int i = 0; i < pool.Length; i++)
-			pool[i].Kill();
-
 		evenementialScore = alarmistScore = nostalgiaScore = hipsterScore = startScore;
 
 		spawner.InitSpawn ();
 
-		SpawnNews();
+		StartCoroutine(AdvanceToNextDay());
 	}
 
 	// Pooling : gets available news object
@@ -64,6 +62,9 @@ public class NewsPoolManager : MonoBehaviour
 	// Called when a news is liked
 	public void ClickSomeNews(ClickableNews cn)
 	{
+		// An animation has been launched in ClickableNews.cs. From this singleton, click input should be shutdown.
+		inputHolder.PutOnCooldown(1.0f);
+
 		// How much exp does the color gain ?
 		float exp = curDay * multiplierPerArticle;
 		if (cn.isFakeNews) exp *= fakeNewsMultiplier;
@@ -99,17 +100,23 @@ public class NewsPoolManager : MonoBehaviour
 		{
 			curDay++;
 			curActivatedNews = 0;
-
-			for (int i = 0; i < pool.Length; i++)
-				pool[i].Kill();
-
-			SpawnNews();
+			StartCoroutine(AdvanceToNextDay());
 		}
 	}
 
-	// Called at the beginning of each day
-	public void SpawnNews()
+	// Called at the end of each day
+	public IEnumerator AdvanceToNextDay()
 	{
+		// First, freeze inputs.
+		inputHolder.PutOnCooldown(100.0f);
+
+		// Then kill all old news.
+		yield return new WaitForSeconds(2.0f);
+		for (int i = 0; i < pool.Length; i++)
+			pool[i].Kill();
+
+		yield return new WaitForSeconds(0.2f);
+
 		// Determine how many news there are, and where they should spawn
 		int forced = days[curDay].forcedNews == null ? 0 : days[curDay].forcedNews.Count;
 		int randomNews = Mathf.Max(days[curDay].numberOfRandomNews, 0);
@@ -126,6 +133,7 @@ public class NewsPoolManager : MonoBehaviour
 				news.Load(days[curDay].forcedNews[i]);
 				news.Spawn(spawnPositions[spawned]);
 				spawned++;
+				yield return new WaitForSeconds(0.3f);
 			}
 
 		// Spawning random news : also refreshing pool of today's cards
@@ -144,8 +152,14 @@ public class NewsPoolManager : MonoBehaviour
 				news.Load(GetRandomCard());
 				news.Spawn(spawnPositions[spawned]);
 				spawned++;
+				yield return new WaitForSeconds(0.3f);
 			}
 		}
+
+		// Inputs are back.
+		inputHolder.PutOnCooldown(1);
+
+		yield return null;
 	}
 
 	// Rolls a card for random news

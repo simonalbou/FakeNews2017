@@ -42,12 +42,13 @@ public class ClickableNews : MonoBehaviour {
 	public void Activate()
 	{
 		selfCollider.enabled = false;
-		selfRenderer.color = Color.green;
+		// play animation
 		NewsPoolManager.instance.ClickSomeNews(this);
 	}
 
 	public void Kill()
 	{
+		// should play an animation here (coroutine ?) if selfCollider is still enabled
 		available = true;
 		selfCollider.enabled = false;
 		content.SetActive(false);
@@ -66,10 +67,8 @@ public class ClickableNews : MonoBehaviour {
 
 	public void Load(Card card)
 	{
-		author.text = card.author;
 		title.text = card.title;
-		picture.sprite = card.image; // we should change template if no image is loaded
-
+		
 		if (card.family == CardFamily.ALARMISTE)	selfRenderer.color = alarmistColor;
 		if (card.family == CardFamily.EVENEMENTIEL) selfRenderer.color = evenementialColor;
 		if (card.family == CardFamily.HIPSTER)		selfRenderer.color = hipsterColor;
@@ -79,5 +78,9 @@ public class ClickableNews : MonoBehaviour {
 		family = card.family;
 		isFakeNews = card.isFakeNews;
 		inducedCards = card.inducedCards;
+
+		// TODO
+		//author.text = card.author;
+		//picture.sprite = card.image; // we should also change template if no image is loaded, like, alternate with two contents
 	}
 }

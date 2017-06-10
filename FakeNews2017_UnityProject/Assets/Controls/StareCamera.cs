@@ -10,8 +10,13 @@ public class StareCamera : MonoBehaviour
 	public Transform self;
 	private RaycastHit hit;
 
+	[System.NonSerialized]
+	public float cooldown;
+
 	void Update ()
 	{
+		cooldown -= Time.deltaTime;
+		if (cooldown > 0) return;
 		if (Input.GetMouseButtonDown(0)) Click();
 	}
 
@@ -25,5 +30,10 @@ public class StareCamera : MonoBehaviour
 		ClickableNews cn = col.GetComponent<ClickableNews>();
 		if (!cn) return;
 		if (cn.OnSelected != null) cn.OnSelected.Invoke();
+	}
+
+	public void PutOnCooldown (float secs)
+	{
+		cooldown = secs;
 	}
 }
