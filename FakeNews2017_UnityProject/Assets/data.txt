@@ -1,0 +1,113 @@
+COULEUR	JOURNALISTE	ARTICLE	NB CARAC		CODE COULEUR	POLITIQUES	NOMBRE		JOURNALISTES
+EVENEMENTIEL	Rita Tutsuko	10 trucs bizarres que nos politiques font, la 3e va vous surprendre !	69		EVENEMENTIEL	Lion & Buffle	3		Rita Tutsuko
+ALARMISTE	Suzi Grieffe	La vérité sur les propositions de Mr Lontarin	45		NOSTALGIE	Rinho & Lion	3		Pierre Bernard
+ALARMISTE	Valérie Lesplantes	Les conséquences environnementales de la production de cacahuète	64		ALARMISTE	Rinho & Zebre	5		Dan Crawford
+NOSTALGIE	Céline Delindon	Les 10 recettes de nos grands-mères	35		HIPSTER	Zebre & Buffle	5		Claire Rimeline
+HIPSTER	Claire Rimeline	Quel type de quinoa êtes vous ?	31		META	Neutre	2		Suzi Grieffe
+HIPSTER	Dan Crawford	Ou trouver les meilleurs vélos pour quadripède ?	48						Grace Gralin
+EVENEMENTIEL	Grace Gralin	Trahison ! La dernière conquête de Bill Ruffalo se confie !	59			TOTAL	18		Coline Blois
+NOSTALGIE	Pierre Bernard	La part du lion : que reste-t-il de la politique de Beauregard dans le programme de sa fille ?	94						Valérie Lesplantes
+ALARMISTE	Kate Preston	Ce que ne vous dit pas la presse : la vérité sur les dessous du complot mammifero-félidé	88						David Puget
+META	Eric Scruter	L'état de la presse aujourd'hui !	33		PERSO				Louise Salami
+HIPSTER	Rita Tutsuko	Pour une société plus participative	35		Lion // M. Beauregard (surnomé B.R.)				Lionel Maurin
+META	Dan Crawford	Les éditorialistes sont-il vraiment plus éclairés ?	51		Lionne // Mademoiselle Beauregard				Sybille Riloff
+NOSTALGIE	Valérie Lesplantes	"Aujourd'hui, dans la rue, c'est moins convivial", un témoignage ordinaire	74		Rhino // Lontarin				Kate Preston
+EVENEMENTIEL	Jess Carlin	La vie royale : comment Beauregard gère sa vie de femme célibataire	67		Buffle // Bill Ruffalo				Jess Carlin
+ALARMISTE	Suzi Grieffe	"Le crime a augmenté pour moi, c'est évident", un témoignage édifiant	69		Zèbre // Hike				Paul Dorade
+HIPSTER	Dan Crawford	La levée de fond de ZebraTM atteint des records !	49						Céline Delindon
+ALARMISTE	Valérie Lesplantes	Affaire des marais pollués : les hyènes montrent patte blanche	62						Eric Scruter
+HIPSTER	Claire Rimeline	Les coins les plus branchés de la savane pour les vacances	58						Derrick Zammour
+			0						Nathalie Colonie
+			0						Agnès-Sylvie Latoff
+			0						Larry Delamaison
+			0						Jules-Jérôme Landrin
+			0						Yvon Calva
+			0						Eddy Plain
+			0						Lise Lucie
+			0						Henry Roséelac
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
+			0						
