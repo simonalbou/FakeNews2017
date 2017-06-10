@@ -72,8 +72,7 @@ public class NewsPoolManager : MonoBehaviour {
 			for (int i = 0; i < pool.Length; i++)
 				pool[i].Kill();
 
-			for (int i = 0; i < curDay*3; i++)
-				SpawnNews(curDay*3);
+			SpawnNews(curDay*3);
 		}
 	}
 
