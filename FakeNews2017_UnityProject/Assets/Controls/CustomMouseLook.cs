@@ -57,7 +57,7 @@ public class MouseLook
 			yRot = deltaX * XSensitivity;
 			xRot = deltaY * YSensitivity;			
 		}
-
+		
 		if (dependOnAltKey && !Input.GetKey(KeyCode.LeftAlt)) yRot = xRot = 0;
 
         //m_CharacterTargetRot *= Quaternion.Euler (0f, yRot, 0f);
@@ -129,8 +129,10 @@ public class CustomMouseLook : MonoBehaviour
 
 	void Update()
 	{
-		if(!disabledForDebug)
+		if (!disabledForDebug)
+		{
 			_look.LookRotation(playerTransform, self);
+		}
 
 		//if (Input.GetKeyDown(KeyCode.LeftShift)) disabledForDebug = !disabledForDebug;
 	}
