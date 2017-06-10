@@ -6,10 +6,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4D474177-8031-1850-A53A-6E69EA1844CF}</ProjectGuid>
+    <ProjectGuid>{D3E5A783-6114-1F22-BEDF-D49CD2F1154C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -46,11 +46,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Controls\CustomMouseLook.cs" />
-     <Compile Include="Assets\Controls\StareCamera.cs" />
-     <Compile Include="Assets\NewsObjects\ClickableNews.cs" />
-     <Compile Include="Assets\NewsObjects\NewsPoolManager.cs" />
-     <Compile Include="Assets\Spawner.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="Facebook.Unity.Settings">
@@ -83,10 +89,6 @@
  <Reference Include="UnityEditor.iOS.Extensions.Common">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{D3E5A783-6114-1F22-BEDF-D49CD2F1154C}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
