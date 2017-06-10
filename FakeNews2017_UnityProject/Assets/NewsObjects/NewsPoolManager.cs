@@ -12,6 +12,11 @@ public class NewsPoolManager : MonoBehaviour {
 	// day manager
 	[System.NonSerialized]
 	public int curDay, curActivatedNews;
+	[System.NonSerialized]
+	public float evenementialScore, alarmistScore, nostalgiaScore, hipsterScore;
+
+	[Header("Gameplay")]
+	public float startScore = 4;
 
 	public void Awake()
 	{
@@ -21,6 +26,8 @@ public class NewsPoolManager : MonoBehaviour {
 
 		for (int i = 0; i < pool.Length; i++)
 			pool[i].Kill();
+
+		evenementialScore = alarmistScore = nostalgiaScore = hipsterScore = startScore;
 
 		spawner.InitSpawn ();
 
@@ -61,9 +68,12 @@ public class NewsPoolManager : MonoBehaviour {
 
 	#region day manager
 
-	public void ClickSomeNews()
+	public void ClickSomeNews(NewsType nt)
 	{
 		curActivatedNews++;
+
+		if (nt == NewsType.Alarmist) alarmistScore += curDay;
+
 		if(curActivatedNews == curDay && curDay < 10)
 		{
 			curDay++;
