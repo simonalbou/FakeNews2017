@@ -18,10 +18,6 @@ public class Spawner : MonoBehaviour
 
 	void Awake ()
 	{
-		_spawnroot = transform;
-
-		InitSpawn ();
-
 		instance = this;
 	}
 
@@ -38,8 +34,12 @@ public class Spawner : MonoBehaviour
 		StartCoroutine (SpawnAfterSeconds ());
 	}
 
-	void InitSpawn ()
+	public void InitSpawn ()
 	{
+		_spawnroot = transform;
+
+
+
 		int numberOfAngle = (int) (360f / angle);
 
 		_spawnPositions = new Vector3[numberOfStair * numberOfAngle];

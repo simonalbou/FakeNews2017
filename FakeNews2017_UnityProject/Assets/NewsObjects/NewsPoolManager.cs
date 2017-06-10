@@ -22,6 +22,8 @@ public class NewsPoolManager : MonoBehaviour {
 		for (int i = 0; i < pool.Length; i++)
 			pool[i].Kill();
 
+		spawner.InitSpawn ();
+
 		SpawnNews(1);
 	}
 
