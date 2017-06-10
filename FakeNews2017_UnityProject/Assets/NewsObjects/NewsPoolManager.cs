@@ -73,8 +73,11 @@ public class NewsPoolManager : MonoBehaviour {
 		curActivatedNews++;
 
 		if (nt == NewsType.Alarmist) alarmistScore += curDay;
+		if (nt == NewsType.Evenemential) evenementialScore += curDay;
+		if (nt == NewsType.Hipster) hipsterScore += curDay;
+		if (nt == NewsType.Nostalgia) nostalgiaScore += curDay;
 
-		if(curActivatedNews == curDay && curDay < 10)
+		if (curActivatedNews == curDay && curDay < 10)
 		{
 			curDay++;
 			curActivatedNews = 0;
