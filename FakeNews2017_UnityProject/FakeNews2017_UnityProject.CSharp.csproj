@@ -87,6 +87,7 @@
     <Compile Include="Assets\Controls\StareCamera.cs" />
     <Compile Include="Assets\NewsObjects\ClickableNews.cs" />
     <Compile Include="Assets\NewsObjects\NewsPoolManager.cs" />
+    <Compile Include="Assets\Spawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

@@ -21,7 +21,7 @@ public class NewsPoolManager : MonoBehaviour {
 		for (int i = 0; i < pool.Length; i++)
 			pool[i].Kill();
 
-		SpawnNews();
+		SpawnNews(1);
 	}
 
 	#region pooling
@@ -34,10 +34,15 @@ public class NewsPoolManager : MonoBehaviour {
 		return null;
 	}
 
-	public void SpawnNews()
+	public void SpawnNews(int newsNumber)
 	{
+		Vector3[] spawnPositions = new Vector3[newsNumber];
+
+		// get la valeur des spawn positions
+
 		Vector3 pos = GetSpawnPos();
-		GetNews().Spawn(pos);
+		for (int i = 0; i < newsNumber; i++)
+			GetNews().Spawn(spawnPositions[i]);
 	}
 
 	Vector3 GetSpawnPos()
@@ -67,7 +72,7 @@ public class NewsPoolManager : MonoBehaviour {
 				pool[i].Kill();
 
 			for (int i = 0; i < curDay*3; i++)
-				SpawnNews();
+				SpawnNews(curDay*3);
 		}
 	}
 
