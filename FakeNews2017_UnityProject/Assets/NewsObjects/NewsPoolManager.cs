@@ -6,6 +6,7 @@ public class NewsPoolManager : MonoBehaviour {
 
 	// pooling
 	public static NewsPoolManager instance;
+	public Spawner spawner;
 	public ClickableNews[] pool;
 
 	// day manager
@@ -36,9 +37,7 @@ public class NewsPoolManager : MonoBehaviour {
 
 	public void SpawnNews(int newsNumber)
 	{
-		Vector3[] spawnPositions = new Vector3[newsNumber];
-
-		// get la valeur des spawn positions
+		Vector3[] spawnPositions = spawner.GetPositions(newsNumber);
 
 		Vector3 pos = GetSpawnPos();
 		for (int i = 0; i < newsNumber; i++)
