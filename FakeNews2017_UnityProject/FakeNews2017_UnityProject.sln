@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeNews2017_UnityProject", "Assembly-CSharp.csproj", "{4D474177-8031-1850-A53A-6E69EA1844CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D474177-8031-1850-A53A-6E69EA1844CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D474177-8031-1850-A53A-6E69EA1844CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D474177-8031-1850-A53A-6E69EA1844CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D474177-8031-1850-A53A-6E69EA1844CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
