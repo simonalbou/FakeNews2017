@@ -21,6 +21,7 @@ public class ClickableNews : MonoBehaviour {
 	public Transform self;
 	public Collider selfCollider;
 	public AudioSource selfAudio;
+	public AnimationHandler selfAnim;
 	public GameObject content;
 	public Image selfRenderer, picture;
 	public Text title, author;
@@ -49,17 +50,23 @@ public class ClickableNews : MonoBehaviour {
 		selfAudio.clip = onClickedSFX;
 		selfAudio.Play();
 		selfCollider.enabled = false;
-		// animation goes here
+		selfAnim.AlphaTo(0, 1);
+		selfAnim.AltitudeTo(2, 1);
 		selfRenderer.color = Color.black;
 		NewsPoolManager.instance.ClickSomeNews(this);
 	}
 
 	public void Kill()
 	{
-		// should play an animation here (coroutine ?) if selfCollider is still enabled
+		if (selfCollider.enabled)
+		{
+			selfAnim.AlphaTo(0, 0.3f);
+			selfAnim.AltitudeTo(-1, 0.3f);
+			selfAnim.ScaleTo(0, 0.3f);
+		}
 		available = true;
 		selfCollider.enabled = false;
-		content.SetActive(false);
+		//content.SetActive(false);
 	}
 
 	public void Spawn(Vector3 pos)
@@ -72,6 +79,10 @@ public class ClickableNews : MonoBehaviour {
 		available = false;
 		selfAudio.clip = onSpawnedSFX;
 		selfAudio.Play();
+		selfAnim.AlphaTo(1, 1);
+		selfAnim.ScaleTo(1, 0);
+		selfAnim.AltitudeTo(2, 0);
+		selfAnim.AltitudeTo(0, 1);
 	}
 
 	public void Load(Card card)
@@ -96,8 +107,8 @@ public class ClickableNews : MonoBehaviour {
 		isFakeNews = card.isFakeNews;
 		inducedCards = card.inducedCards;
 
-		// TODO
-		//author.text = card.author;
-		//picture.sprite = card.image; // we should also change template if no image is loaded, like, alternate with two contents
+		author.text = card.author;
+		picture.sprite = card.image;
+		// we should also change template if no image is loaded, like, alternate with two contents
 	}
 }
