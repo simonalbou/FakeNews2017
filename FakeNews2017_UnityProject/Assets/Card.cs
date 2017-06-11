@@ -10,6 +10,7 @@ public class Card : ScriptableObject
 	[Header("News Type")]
 	public CardFamily family = default(CardFamily);
 	public bool isFakeNews;
+	public string reference;
 	
 	[Header("Availability by Day")]
 	public int firstDay;

@@ -24,7 +24,7 @@ public class ParseData
 			cardObject.family = (CardFamily) System.Enum.Parse (typeof(CardFamily), card[1]); 
 			cardObject.author = card [2];
 			cardObject.title = card [3];
-			cardObject.fake = !(card [4] == "TRUE");
+			cardObject.isFakeNews = !(card [4] == "TRUE");
 
 			AssetDatabase.CreateAsset (cardObject, "Assets/Cards/Card_" + cardObject.reference + ".asset");
 			AssetDatabase.SaveAssets ();
