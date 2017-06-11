@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
 	public float angle = 20f;
 	public float radius = 1f;
 	public float heightSpace = 1.5f;
+	public float radiusCorrection = 0.5f;
 	public int numberOfStair = 4;
 	public List<Material> materials;
 	public int numberOfPart = 2;
@@ -63,7 +64,7 @@ public class Spawner : MonoBehaviour
 		{
 			List<Vector3> stairSpawn = new List<Vector3> ();
 
-			float correctRadius = radius - 0.25f * h;
+			float correctRadius = radius - radiusCorrection * h;
 			for (int i = 0; i < numberOfAngle; i++)
 			{
 				Vector3 position = new Vector3 ();
