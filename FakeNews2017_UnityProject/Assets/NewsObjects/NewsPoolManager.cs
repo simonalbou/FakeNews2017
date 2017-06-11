@@ -172,7 +172,7 @@ public class NewsPoolManager : MonoBehaviour
 		else if (roll < alarmWeight + hipsterWeight + nostalWeight) family = CardFamily.NOSTALGIE;
 		else family = CardFamily.EVENEMENTIEL;
 
-		float fakeNewsChance = 0;
+		float fakeNewsChance = -1.0f;
 		if (curDay > 4)
 		{
 			if (family == CardFamily.ALARMISTE)

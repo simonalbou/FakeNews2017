@@ -42,7 +42,8 @@ public class ClickableNews : MonoBehaviour {
 	public void Activate()
 	{
 		selfCollider.enabled = false;
-		// play animation
+		// animation goes here
+		selfRenderer.color = Color.black;
 		NewsPoolManager.instance.ClickSomeNews(this);
 	}
 
@@ -58,7 +59,6 @@ public class ClickableNews : MonoBehaviour {
 	{
 		content.SetActive(true);
 		selfRenderer.enabled = true;
-		selfRenderer.color = Color.white;
 		self.position = pos;
 		BillboardToZero();
 		selfCollider.enabled = true;
@@ -68,14 +68,22 @@ public class ClickableNews : MonoBehaviour {
 	public void Load(Card card)
 	{
 		title.text = card.title;
-		
-		if (card.family == CardFamily.ALARMISTE)	selfRenderer.color = alarmistColor;
-		if (card.family == CardFamily.EVENEMENTIEL) selfRenderer.color = evenementialColor;
-		if (card.family == CardFamily.HIPSTER)		selfRenderer.color = hipsterColor;
-		if (card.family == CardFamily.NOSTALGIE)	selfRenderer.color = nostalgiaColor;
-		if (card.family == CardFamily.META)			selfRenderer.color = metaColor;
 
 		family = card.family;
+
+		Debug.Log(card.family);
+
+		if (family == CardFamily.ALARMISTE)
+			selfRenderer.color = alarmistColor;
+		if (family == CardFamily.EVENEMENTIEL)
+			selfRenderer.color = evenementialColor;
+		if (family == CardFamily.HIPSTER)
+			selfRenderer.color = hipsterColor;
+		if (family == CardFamily.NOSTALGIE)
+			selfRenderer.color = nostalgiaColor;
+		if (family == CardFamily.META)
+			selfRenderer.color = metaColor;
+
 		isFakeNews = card.isFakeNews;
 		inducedCards = card.inducedCards;
 
