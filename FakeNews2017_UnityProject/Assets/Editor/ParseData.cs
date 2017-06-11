@@ -26,6 +26,19 @@ public class ParseData
 			cardObject.title = card [3];
 			cardObject.isFakeNews = !(card [4] == "TRUE");
 
+			//
+			int id = int.Parse (cardObject.reference.Split ('_')[1]);
+			string imagePath = "Assets/NewsObject/Vignettes/Vignettes/"  +id  + ".png";
+
+			Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite> (imagePath);
+
+			if (sprite == null)
+			{
+				sprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/NewsObject/Vignettes/Vignettes/0.png");
+			}
+
+			cardObject.image = sprite;
+
 			string[] firstlastday = card [6].Split (':');
 			if (firstlastday.Length == 2)
 			{
@@ -117,7 +130,7 @@ public class ParseData
 		card.lastDay = day;
 		card.family = CardFamily.META;
 		card.author = "ASN";
-
+		card.image = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/NewsObject/Vignettes/Vignettes/0.png");
 		AssetDatabase.CreateAsset (card, "Assets/NonRandom/Card_" + reference + "_" + day + ".asset");
 	}
 }
