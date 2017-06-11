@@ -15,6 +15,8 @@ public class ClickableNews : MonoBehaviour {
 	public Text text;
 	public UnityEvent OnSelected;
 	public NewsType newsType;
+	public Text author;
+	public Image thumbnail;
 
 	[System.NonSerialized]
 	public bool available;
