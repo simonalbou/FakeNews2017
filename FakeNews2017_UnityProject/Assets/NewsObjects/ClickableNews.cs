@@ -7,11 +7,11 @@ using UnityEngine.UI;
 public class ClickableNews : MonoBehaviour {
 
 	[Header("Colors")]
-	public Color alarmistColor;
-	public Color evenementialColor;
-	public Color hipsterColor;
-	public Color nostalgiaColor;
-	public Color metaColor;
+	public Sprite alarmistColor;
+	public Sprite evenementialColor;
+	public Sprite hipsterColor;
+	public Sprite nostalgiaColor;
+	public Sprite metaColor;
 
 	[Header("Audio")]
 	public AudioClip onSpawnedSFX;
@@ -52,7 +52,6 @@ public class ClickableNews : MonoBehaviour {
 		selfCollider.enabled = false;
 		selfAnim.AlphaTo(0, 1);
 		selfAnim.AltitudeTo(2, 1);
-		selfRenderer.color = Color.black;
 		NewsPoolManager.instance.ClickSomeNews(this);
 	}
 
@@ -78,7 +77,7 @@ public class ClickableNews : MonoBehaviour {
 		selfCollider.enabled = true;
 		available = false;
 		selfAudio.clip = onSpawnedSFX;
-		//selfAudio.Play();
+		selfAudio.Play();
 		selfAnim.AlphaTo(1, 1);
 		selfAnim.ScaleTo(1, 0);
 		selfAnim.AltitudeTo(2, 0);
@@ -94,15 +93,15 @@ public class ClickableNews : MonoBehaviour {
 		//Debug.Log(card.family);
 
 		if (family == CardFamily.ALARMISTE)
-			selfRenderer.color = alarmistColor;
+			selfRenderer.sprite = alarmistColor;
 		if (family == CardFamily.EVENEMENTIEL)
-			selfRenderer.color = evenementialColor;
+			selfRenderer.sprite = evenementialColor;
 		if (family == CardFamily.HIPSTER)
-			selfRenderer.color = hipsterColor;
+			selfRenderer.sprite = hipsterColor;
 		if (family == CardFamily.NOSTALGIE)
-			selfRenderer.color = nostalgiaColor;
+			selfRenderer.sprite = nostalgiaColor;
 		if (family == CardFamily.META)
-			selfRenderer.color = metaColor;
+			selfRenderer.sprite = metaColor;
 
 		isFakeNews = card.isFakeNews;
 		inducedCards = card.inducedCards;

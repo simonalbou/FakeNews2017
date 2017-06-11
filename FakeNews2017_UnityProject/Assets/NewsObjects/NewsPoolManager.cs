@@ -27,7 +27,7 @@ public class NewsPoolManager : MonoBehaviour
 	[System.NonSerialized]
 	public float evenementialScore, alarmistScore, nostalgiaScore, hipsterScore, alarmWeight, eventWeight, nostalWeight, hipsterWeight, invTotal;
 	[System.NonSerialized]
-	public List<Card> cardsOfTheDay;
+	public List<Card> cardsOfTheDay, possibleCards;
 
 	[Header("Gameplay")]
 	public float startScore = 4;
@@ -36,9 +36,16 @@ public class NewsPoolManager : MonoBehaviour
 	public BubbleDay[] days;
 	public Card[] allRandomCards;
 
+	private int state;
+	private float cooldown;
+	// used when moving day
+	private int forced, randomNews, total, spawned;
+	private Vector3[] spawnPositions;
+
 	public void Awake()
 	{
 		cardsOfTheDay = new List<Card>();
+		possibleCards = new List<Card>();
 		instance = this;
 		curDay = 0;
 		curActivatedNews = 0;
@@ -47,7 +54,8 @@ public class NewsPoolManager : MonoBehaviour
 
 		spawner.InitSpawn ();
 
-		StartCoroutine(AdvanceToNextDay());
+		MoveOntoNextDay();
+		//StartCoroutine(AdvanceToNextDay());
 	}
 
 	// Pooling : gets available news object
@@ -100,12 +108,111 @@ public class NewsPoolManager : MonoBehaviour
 		{
 			curDay++;
 			curActivatedNews = 0;
-			if(curDay < days.Length)
-				StartCoroutine(AdvanceToNextDay());
+			if (curDay < days.Length)
+				MoveOntoNextDay(); //StartCoroutine(AdvanceToNextDay());
 		}
 	}
 
+	// Faked coroutine
+	public void Update()
+	{
+		cooldown -= Time.deltaTime;
+
+		if (state == 0)
+		{
+			if(cooldown < 0)
+			{
+				for (int i = 0; i < pool.Length; i++)
+					pool[i].Kill();
+
+				state++;
+				cooldown = 0.2f;
+				return;
+			}
+		}
+
+		if (state == 1)
+		{
+			if (cooldown < 0)
+			{
+				// Determine how many news there are, and where they should spawn
+				forced = days[curDay].forcedNews == null ? 0 : days[curDay].forcedNews.Count;
+				randomNews = Mathf.Max(days[curDay].numberOfRandomNews, 0);
+				total = forced + randomNews;
+				spawnPositions = spawner.GetPositions(total);
+
+				spawned = 0;
+
+				state++;
+				cooldown = 0.3f;
+				return;
+			}
+		}
+
+		if (state == 2)
+		{
+			if (forced == 0) { state++; return; }
+			else if (cooldown < 0)
+			{
+				ClickableNews news = GetNews();
+				news.Load(days[curDay].forcedNews[forced-1]);
+				news.Spawn(spawnPositions[spawned]);
+				spawned++;
+				forced--;
+				cooldown = 0.3f;
+			}
+		}
+
+		if (state == 3)
+		{
+			if (randomNews > 0)
+			{
+				cardsOfTheDay.Clear();
+				cardsOfTheDay.TrimExcess();
+				//cardsOfTheDay = new List<Card>();
+				for (int i = 0; i < allRandomCards.Length; i++)
+					if (allRandomCards[i].firstDay <= curDay && allRandomCards[i].lastDay >= curDay)
+						cardsOfTheDay.Add(allRandomCards[i]);
+
+				state++;
+			}
+			else { state = 5; return; }
+		}
+
+		if (state == 4)
+		{
+			if (randomNews == 0) { state++; return; }
+			else if (cooldown < 0)
+			{
+				ClickableNews news = GetNews();
+				news.Load(GetRandomCard());
+				news.Spawn(spawnPositions[spawned]);
+				spawned++;
+				randomNews--;
+				cooldown = 0.3f;
+			}
+		}
+
+		if (state == 5)
+		{
+			state = 0;
+			inputHolder.PutOnCooldown(1);
+			enabled = false;
+		}
+	}
+
+	void MoveOntoNextDay()
+	{
+		// First, freeze inputs.
+		inputHolder.PutOnCooldown(100.0f);
+
+		cooldown = 2.0f;
+		state = 0;
+		enabled = true;
+	}
+
 	// Called at the end of each day
+	/**
 	public IEnumerator AdvanceToNextDay()
 	{
 		// First, freeze inputs.
@@ -142,7 +249,7 @@ public class NewsPoolManager : MonoBehaviour
 		{
 			cardsOfTheDay.Clear();
 			cardsOfTheDay.TrimExcess();
-			cardsOfTheDay = new List<Card>();
+			//cardsOfTheDay = new List<Card>();
 			for (int i = 0; i < allRandomCards.Length; i++)
 				if (allRandomCards[i].firstDay <= curDay && allRandomCards[i].lastDay >= curDay)
 					cardsOfTheDay.Add(allRandomCards[i]);
@@ -162,6 +269,7 @@ public class NewsPoolManager : MonoBehaviour
 
 		yield return null;
 	}
+	//*/
 
 	// Rolls a card for random news
 	public Card GetRandomCard()
@@ -198,12 +306,12 @@ public class NewsPoolManager : MonoBehaviour
 	// Get possible cards in a specific situation, among today's available ones
 	List<Card> GetPossibleCards(CardFamily fam, bool mustBeFake)
 	{
-		List<Card> result = new List<Card>();
+		possibleCards.Clear();
 
 		for (int i = 0; i < cardsOfTheDay.Count; i++)
 			if (cardsOfTheDay[i].family == fam && cardsOfTheDay[i].isFakeNews == mustBeFake)
-				result.Add(cardsOfTheDay[i]);
+				possibleCards.Add(cardsOfTheDay[i]);
 
-		return result;
+		return possibleCards;
 	}
 }
