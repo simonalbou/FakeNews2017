@@ -78,7 +78,7 @@ public class ClickableNews : MonoBehaviour {
 		selfCollider.enabled = true;
 		available = false;
 		selfAudio.clip = onSpawnedSFX;
-		selfAudio.Play();
+		//selfAudio.Play();
 		selfAnim.AlphaTo(1, 1);
 		selfAnim.ScaleTo(1, 0);
 		selfAnim.AltitudeTo(2, 0);
@@ -91,7 +91,7 @@ public class ClickableNews : MonoBehaviour {
 
 		family = card.family;
 
-		Debug.Log(card.family);
+		//Debug.Log(card.family);
 
 		if (family == CardFamily.ALARMISTE)
 			selfRenderer.color = alarmistColor;

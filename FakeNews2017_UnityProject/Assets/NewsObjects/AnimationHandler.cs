@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public struct LerpableParam
+public class LerpableParam
 {
 	public float start, target, curValue, progress, invDuration;
 }
@@ -19,9 +19,13 @@ public class AnimationHandler : MonoBehaviour
 
 	void Awake()
 	{
-		alpha.progress = 2;
-		scale.progress = 2;
-		altitude.progress = 2;
+		alpha = new LerpableParam();
+		scale = new LerpableParam();
+		altitude = new LerpableParam();
+
+		alpha.progress = 2f;
+		scale.progress = 2f;
+		altitude.progress = 2f;
 	}
 
 	void Update()
@@ -34,6 +38,7 @@ public class AnimationHandler : MonoBehaviour
 	bool UpdateParam(LerpableParam par)
 	{
 		if (par.progress > 1) return false;
+
 		par.progress += Time.deltaTime * par.invDuration;
 		par.curValue = Mathf.Lerp(par.start, par.target, Smooth(par.progress));
 		return true;
@@ -44,13 +49,14 @@ public class AnimationHandler : MonoBehaviour
 		if (duration == 0)
 		{
 			selfGroup.alpha = target;
+			alpha.progress = 2;
 			return;
 		}
 
 		alpha.start = selfGroup.alpha;
 		alpha.target = target;
-		alpha.progress = 0;
-		alpha.invDuration = 1 / duration;
+		alpha.progress = 0.0f;
+		alpha.invDuration = 1.0f / duration;
 	}
 
 	public void ScaleTo(float target, float duration)
@@ -58,6 +64,7 @@ public class AnimationHandler : MonoBehaviour
 		if (duration == 0)
 		{
 			self.localScale = Vector3.one * target;
+			scale.progress = 2;
 			return;
 		}
 
@@ -72,6 +79,7 @@ public class AnimationHandler : MonoBehaviour
 		if (duration == 0)
 		{
 			self.localPosition = Vector3.up * target;
+			altitude.progress = 2;
 			return;
 		}
 
