@@ -18,6 +18,7 @@ public class MouseLook
 
 	public bool touchInput;
 	public bool dependOnAltKey = false;
+	public bool shittyComputerMode = false;
 
     public void Init(Transform character, Transform camera)
     {
@@ -32,8 +33,18 @@ public class MouseLook
 
 		if (!touchInput)
 		{
-			yRot = CrossPlatformInputManager.GetAxis("Mouse X") * XSensitivity;
-			xRot = CrossPlatformInputManager.GetAxis("Mouse Y") * YSensitivity;
+			if (shittyComputerMode)
+			{
+				yRot = Input.GetKey(KeyCode.D) ? XSensitivity : 0;
+				xRot = Input.GetKey(KeyCode.Z) ? YSensitivity : 0;
+				yRot = Input.GetKey(KeyCode.Q) ? -XSensitivity : yRot;
+				xRot = Input.GetKey(KeyCode.S) ? -YSensitivity : xRot;
+			}
+			else
+			{
+				yRot = CrossPlatformInputManager.GetAxis("Mouse X") * XSensitivity;
+				xRot = CrossPlatformInputManager.GetAxis("Mouse Y") * YSensitivity;
+			}
 		}
 		else
 		{
