@@ -89,6 +89,10 @@
     <Compile Include="Assets\Controls\StareCamera.cs" />
     <Compile Include="Assets\NewsObjects\ClickableNews.cs" />
     <Compile Include="Assets\NewsObjects\NewsPoolManager.cs" />
+    <Compile Include="Assets\OSPNative\scripts\ONSPAmbisonicsNative.cs" />
+    <Compile Include="Assets\OSPNative\scripts\ONSPAudioSource.cs" />
+    <Compile Include="Assets\OSPNative\scripts\ONSPVersion.cs" />
+    <Compile Include="Assets\OSPNative\scripts\helpers\ONSPReflectionZone.cs" />
     <Compile Include="Assets\Spawner.cs" />
   </ItemGroup>
   <ItemGroup>

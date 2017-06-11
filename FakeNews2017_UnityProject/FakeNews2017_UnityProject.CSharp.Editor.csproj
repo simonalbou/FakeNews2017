@@ -123,6 +123,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="Assembly-UnityScript">
+      <HintPath>Library\ScriptAssemblies\Assembly-UnityScript.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="FakeNews2017_UnityProject.CSharp.Plugins.csproj">
@@ -140,6 +143,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\ParseData.cs" />
+    <Compile Include="Assets\OSPNative\editor\ONSPAudioSourceEditor.cs" />
+    <Compile Include="Assets\OSPNative\editor\ONSPReflectionCustomGUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

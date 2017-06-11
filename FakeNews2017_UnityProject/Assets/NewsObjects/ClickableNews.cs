@@ -13,9 +13,14 @@ public class ClickableNews : MonoBehaviour {
 	public Color nostalgiaColor;
 	public Color metaColor;
 
+	[Header("Audio")]
+	public AudioClip onSpawnedSFX;
+	public AudioClip onClickedSFX;
+
 	[Header("References")]
 	public Transform self;
 	public Collider selfCollider;
+	public AudioSource selfAudio;
 	public GameObject content;
 	public Image selfRenderer, picture;
 	public Text title, author;
@@ -41,6 +46,8 @@ public class ClickableNews : MonoBehaviour {
 
 	public void Activate()
 	{
+		selfAudio.clip = onClickedSFX;
+		selfAudio.Play();
 		selfCollider.enabled = false;
 		// animation goes here
 		selfRenderer.color = Color.black;
@@ -63,6 +70,8 @@ public class ClickableNews : MonoBehaviour {
 		BillboardToZero();
 		selfCollider.enabled = true;
 		available = false;
+		selfAudio.clip = onSpawnedSFX;
+		selfAudio.Play();
 	}
 
 	public void Load(Card card)
