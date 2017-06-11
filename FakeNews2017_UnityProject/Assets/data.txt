@@ -1,113 +1,127 @@
-N°	COULEUR	JOURNALISTE	ARTICLE	STATUT	NB CARAC		CODE COULEUR	POLITIQUES	NOMBRE		JOURNALISTES
-ref_1	EVENEMENTIEL	Rita Tutsuko	10 trucs bizarres que nos politiques font, la 3e va vous surprendre !	TRUE	69		EVENEMENTIEL	Lion & Buffle	6		Rita Tutsuko
-ref_2	ALARMISTE	Suzi Grieffe	La vérité sur les propositions de Mr Lontarin	TRUE	45		NOSTALGIE	Rinho & Lion	4		Pierre Bernard
-ref_3	ALARMISTE	Valérie Lesplantes	Les conséquences environnementales de la production de cacahuète	TRUE	64		ALARMISTE	Rinho & Zebre	5		Dan Crawford
-ref_4	NOSTALGIE	Céline Delindon	Les 10 recettes de nos grands-mères	TRUE	35		HIPSTER	Zebre & Buffle	5		Claire Rimeline
-ref_5	HIPSTER	Claire Rimeline	Quel type de quinoa êtes vous ?	TRUE	31		META	Neutre	4		Suzi Grieffe
-ref_6	HIPSTER	Dan Crawford	Ou trouver les meilleurs vélos pour quadrupède ?	TRUE	48						Grace Gralin
-ref_7	EVENEMENTIEL	Grace Gralin	Trahison ! La dernière conquête de Bill Ruffalo se confie !	TRUE	59			TOTAL	24		Coline Blois
-ref_8	NOSTALGIE	Pierre Bernard	La part du lion : que reste-t-il de la politique de Beauregard dans le programme de sa fille ?	TRUE	94						Valérie Lesplantes
-ref_9	ALARMISTE	Kate Preston	Ce que ne vous dit pas la presse : la vérité sur les dessous du complot mammifero-félidé	TRUE	88						David Puget
-ref_10	META	Eric Scruter	L'état de la presse aujourd'hui !	TRUE	33		PERSO				Louise Salami
-ref_11	HIPSTER	Rita Tutsuko	Pour une société plus participative	TRUE	35		Lion // M. Beauregard (surnomé B.R.)				Lionel Maurin
-ref_12	META	Dan Crawford	Les éditorialistes sont-il vraiment plus éclairés ?	TRUE	51		Lionne // Mademoiselle Beauregard				Sybille Riloff
-ref_13	NOSTALGIE	Valérie Lesplantes	"Aujourd'hui, dans la rue, c'est moins convivial", un témoignage ordinaire	TRUE	74		Rhino // Lontarin				Kate Preston
-ref_14	EVENEMENTIEL	Jess Carlin	La vie royale : comment Beauregard gère sa vie de femme célibataire	TRUE	67		Buffle // Bill Ruffalo				Jess Carlin
-ref_15	ALARMISTE	Suzi Grieffe	"Le crime a augmenté pour moi, c'est évident", un témoignage édifiant	TRUE	69		Zèbre // Hike				Paul Dorade
-ref_16	HIPSTER	Dan Crawford	La levée de fond de ZebraTM atteint des records !	TRUE	49						Céline Delindon
-ref_17	ALARMISTE	Valérie Lesplantes	Affaire des marais pollués : les hyènes montrent patte blanche	TRUE	62						Eric Scruter
-ref_18	HIPSTER	Claire Rimeline	Les coins les plus branchés de la savane pour les vacances	TRUE	58						Derrick Zammour
-ref_19	EVENEMENTIEL	Kate Preston	Reportage photo : tension entre Mlle Beauregard et son père	TRUE	59						Nathalie Colonie
-ref_20	META	Eric Scruter	Qui finance qui ? Infographie des newsgroups. 	TRUE	46						Agnès-Sylvie Latoff
-ref_21	EVENEMENTIEL	Grace Gralin	Indiscrétions dans la famille royale, notre enquête exclusive !	TRUE	63						Larry Delamaison
-ref_22	META	Eric Scruter	Economie : Comparaison des programmes des candidats	TRUE	51						Jules-Jérôme Landrin
-ref_23	NOSTALGIE	Paul Dorade	Sortie de la 9e édition de L'histoire de la vie, revue et corrigée par Mr Lontarin	TRUE	82						Yvon Calva
-ref_24	EVENEMENTIEL	Teresita Gome	Le film préféré  de Beau Regard "La galette de rois"	TRUE	52						Eddy Plain
-ref_25				Fake	0						Lise Lucie
-ref_26					0						Henry Roséelac
-ref_27					0						
-ref_28					0						
-ref_29					0						
-ref_30					0						
-ref_31					0						
-ref_32					0						
-ref_33					0						
-ref_34					0						
-ref_35					0						
-ref_36					0						
-ref_37					0						
-ref_38					0						
-ref_39					0						
-ref_40					0						
-ref_41					0						
-ref_42					0						
-ref_43					0						
-ref_44					0						
-ref_45					0						
-ref_46					0						
-ref_47					0						
-ref_48					0						
-ref_49					0						
-ref_50					0						
-ref_51					0						
-ref_52					0						
-ref_53					0						
-ref_54					0						
-ref_55					0						
-ref_56					0						
-ref_57					0						
-ref_58					0						
-ref_59					0						
-ref_60					0						
-ref_61					0						
-ref_62					0						
-ref_63					0						
-ref_64					0						
-ref_65					0						
-ref_66					0						
-ref_67					0						
-ref_68					0						
-ref_69					0						
-ref_70					0						
-ref_71					0						
-ref_72					0						
-ref_73					0						
-ref_74					0						
-ref_75					0						
-ref_76					0						
-ref_77					0						
-ref_78					0						
-ref_79					0						
-ref_80					0						
-ref_81					0						
-ref_82					0						
-ref_83					0						
-ref_84					0						
-ref_85					0						
-ref_86					0						
-ref_87					0						
-ref_88					0						
-ref_89					0						
-ref_90					0						
-ref_91					0						
-ref_92					0						
-ref_93					0						
-ref_94					0						
-ref_95					0						
-ref_96					0						
-ref_97					0						
-ref_98					0						
-ref_99					0						
-					0						
-					0						
-					0						
-					0						
-					0						
-					0						
-					0						
-					0						
-					0						
-					0						
-					0						
-					0						
-					0						
+N°	COULEUR	JOURNALISTES	ARTICLE	STATUT	NB CARAC	LAST DAY:FIRST DAY		CODE COULEUR	NOMBRE	POLITIQUES	DONT FAKE	JOURNALISTES	PERSO							HIPSTER 1:5	HIPSTER 5:10	HIPSTER 10:15	EVENEMENTIEL 1:5	EVENEMENTIEL 5:10	EVENEMENTIEL 10:15	NOSTALGIE 1:5	NOSTALGIE 5:10	NOSTALGIE 10:15	ALARMISTE 1:5	ALARMISTE  5:10	ALARMISTE  10:15				HIPSTER 1:5	HIPSTER 5:10	HIPSTER 10:15	EVENEMENTIEL 1:5	EVENEMENTIEL 5:10	EVENEMENTIEL 10:15	NOSTALGIE 1:5	NOSTALGIE 5:10	NOSTALGIE 10:15	ALARMISTE 1:5	ALARMISTE  5:10	ALARMISTE  10:15
+ref_1	EVENEMENTIEL	Rita Tutsuko	10 trucs bizarres que nos politiques font, le 3e va vous surprendre 	TRUE	68	1:5		EVENEMENTIEL	31	Lion & Buffle	13	Rita Tutsuko	Lion // M. Beauregard (surnomé B.R.)							0	0	0	1	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_2	ALARMISTE	Suzi Grieffe	La vérité sur les propositions de Mr Lontarin	TRUE	45	5:10		NOSTALGIE	33	Rinho & Lion	13	Pierre Bernard	Lionne // Mademoiselle Beauregard							0	0	0	0	0	0	0	0	0	0	1	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_3	HIPSTER	Valérie Lesplantes	Les conséquences environnementales de la production de cacahuète	TRUE	64	10:15		ALARMISTE	31	Rinho & Zebre	13	Dan Crawford	Rhino // Lontarin							0	0	1	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_4	NOSTALGIE	Céline Delindon	Les 10 recettes de nos grands-mères	TRUE	35	1:5		HIPSTER	31	Zebre & Buffle	13	Claire Rimeline	Buffle // Bill Ruffalo							0	0	0	0	0	0	1	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_5	HIPSTER	Claire Rimeline	Quel type de quinoa êtes vous ?	TRUE	31	1:5				Neutre		Suzi Grieffe	Zèbre // Z							1	0	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_6	HIPSTER	Dan Crawford	Où trouver les meilleurs vélos pour quadrupède ?	TRUE	48	1:5		PLACE				Grace Gralin								1	0	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_7	EVENEMENTIEL	Grace Gralin	Trahison ! La dernière conquête de Bill Ruffalo se confie !	TRUE	59	1:5		1:5	32			Coline Blois								0	0	0	1	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_8	NOSTALGIE	Pierre Bernard	La part du lion : que reste-t-il de la politique de Beauregard dans le programme de sa fille ?	TRUE	94	10:15		05:10	40			Valérie Lesplantes								0	0	0	0	0	0	0	0	1	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_9	ALARMISTE	Kate Preston	Ce que ne vous dit pas la presse : la vérité sur les dessous du complot mammifero-félidé	TRUE	88	10:15		10:15	54			David Puget								0	0	0	0	0	0	0	0	0	0	0	1				0	0	0	0	0	0	0	0	0	0	0	0
+ref_10	EVENEMENTIEL	Eric Scruter	Chez les Beauregard, Madmoiselle était la petite protégée.	TRUE	58	10:15						Louise Salami								0	0	0	0	0	1	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_11	HIPSTER	Rita Tutsuko	Pourquoi la chemise de bûcheron est elle un acte politique ?	TRUE	60	10:15						Lionel Maurin								0	0	1	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_12	ALARMISTE	Dan Crawford	Mlle Beauregard aurait perçu de l'argent venu de pays étrangers.	TRUE	64	10:15		EVENEMENTIEL 1:5	8		0	Sybille Riloff								0	0	0	0	0	0	0	0	0	0	0	1				0	0	0	0	0	0	0	0	0	0	0	0
+ref_13	NOSTALGIE	Valérie Lesplantes	"Aujourd'hui, dans la rue, c'est plus les mêmes gens, m'voyez", un témoignage ordinaire	FAKE	87	10:15		EVENEMENTIEL 5:10	10		5	Kate Preston								0	0	0	0	0	0	0	0	1	0	0	0				0	0	0	0	0	0	0	0	1	0	0	0
+ref_14	EVENEMENTIEL	Jess Carlin	La vie royale : comment Beauregard gère sa vie de femme tiraillée	FAKE	65	10:15		EVENEMENTIEL 10:15	13		8	Jess Carlin								0	0	0	0	0	1	0	0	0	0	0	0				0	0	0	0	0	1	0	0	0	0	0	0
+ref_15	ALARMISTE	Suzi Grieffe	"Le crime a augmenté pour moi, c'est évident", un témoignage édifiant	FAKE	69	5:10		NOSTALGIE 1:5	8		0	Paul Dorade								0	0	0	0	0	0	0	0	0	0	1	0				0	0	0	0	0	0	0	0	0	0	1	0
+ref_16	HIPSTER	Dan Crawford	La levée de fond de ZebraTM atteint des records !	TRUE	49	1:5		NOSTALGIE 5:10	10		5	Céline Delindon								1	0	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_17	ALARMISTE	Valérie Lesplantes	Affaire des marais pollués : les hyènes montrent patte blanche	TRUE	62	5:10		NOSTALGIE 10:15	13		8	Eric Scruter								0	0	0	0	0	0	0	0	0	0	1	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_18	HIPSTER	Claire Rimeline	Les coins les plus branchés de la savane pour les vacances	TRUE	58	10:15		ALARMISTE 1:5	8		0	Derrick Zammour								0	0	1	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_19	EVENEMENTIEL	Kate Preston	Reportage photo : tension entre Mlle Beauregard et son père	TRUE	59	5:10		ALARMISTE 10:15	10		5	Nathalie Colonie								0	0	0	0	1	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_20	NOSTALGIE	Eric Scruter	Ces animaux qui sont revenus à l'alimentation d'antan	TRUE	53	10:15		ALARMISTE 15:10	13		8	Agnès-Sylvie Latoff								0	0	0	0	0	0	0	0	1	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_21	EVENEMENTIEL	Grace Gralin	Indiscrétions dans la famille royale, notre enquête exclusive !	TRUE	63	5:10		HIPSTER 1:5	8		0	Larry Delamaison								0	0	0	0	1	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_22	HIPSTER	Eric Scruter	Débat de l'été : Les singes doivent-ils porter la barbe ? 	TRUE	58	1:5		HIPSTER 5:10	10		5	Jules-Jérôme Landrin								1	0	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_23	NOSTALGIE	Paul Dorade	Sortie de la 9e édition de L'histoire de la vie, revue et corrigée par Mr Lontarin	TRUE	82	1:5		HIPSTER 10:15	13		8	Yvon Calva								0	0	0	0	0	0	1	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_24	EVENEMENTIEL	Larry Delamaison	Le film préféré de Beau Regard "La galette des rois" 	TRUE	53	5:10						Eddy Plain								0	0	0	0	1	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_25	ALARMISTE	Rita Tutsuko	Règlement de compte à Ok Corral !	TRUE	33	10:15						Lise Lucie								0	0	0	0	0	0	0	0	0	0	0	1				0	0	0	0	0	0	0	0	0	0	0	0
+ref_26	EVENEMENTIEL	Jess Carlin	Une taille de guêpe pour l'été ? La reine des abeilles vous livre son secret ultime !	TRUE	85	1:5						Henry Roséelac								0	0	0	1	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_27	NOSTALGIE	Paul Dorade	Lontarin se livre sur son enfance dans la réserve	TRUE	49	1:5														0	0	0	0	0	0	1	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_28	NOSTALGIE	Larry Delamaison	Parution du Livre de la jungle "mon livre de chevet !" commente Lontarin	FAKE	72	10:15		TOTAL	126											0	0	0	0	0	0	0	0	1	0	0	0				0	0	0	0	0	0	0	0	1	0	0	0
+ref_29	NOSTALGIE	Pierre Bernard	Retrouve tes amis sur TroupeauD'avant.com !	TRUE	43	1:5		Nombre de True	74											0	0	0	0	0	0	1	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_30	EVENEMENTIEL	Jess Carlin	Lontarin possède une troisième corne !	FAKE	38	5:10		Nombre de Fake	52											0	0	0	0	1	0	0	0	0	0	0	0				0	0	0	0	1	0	0	0	0	0	0	0
+ref_31	EVENEMENTIEL	Claire Rimeline	La rencontre secrète de Beau Regard avec sa mère La Licorne	FAKE	59	10:15		% FAKE	70,27027027											0	0	0	0	0	1	0	0	0	0	0	0				0	0	0	0	0	1	0	0	0	0	0	0
+ref_32	ALARMISTE	Pierre Bernard	La cacahuète est excellente pour la santé ! Prouve une étude de CacahuèteLoverTM	FAKE	80	5:10														0	0	0	0	0	0	0	0	0	0	1	0				0	0	0	0	0	0	0	0	0	0	1	0
+ref_33	NOSTALGIE	Paul Dorade	Mr Lontarin descenrait du général DeuxCornes affirme Bill Ruffalo	FAKE	65	5:10														0	0	0	0	0	0	0	1	0	0	0	0				0	0	0	0	0	0	0	1	0	0	0	0
+ref_34	EVENEMENTIEL	Nathalie Colonie	Mlle Beauregard tue un Braconnier a main nue ! Son assistant témoigne !	FAKE	71	10:15														0	0	0	0	0	1	0	0	0	0	0	0				0	0	0	0	0	1	0	0	0	0	0	0
+ref_35	ALARMISTE	David Puget	Z possède un compte aux îles Caïmans ! Affirme Lontarin	FAKE	55	5:10														0	0	0	0	0	0	0	0	0	0	1	0				0	0	0	0	0	0	0	0	0	0	1	0
+ref_36	HIPSTER	Dan Crawford	Z accuse Lontarin de vouloir interdire la consommation de quinoa ! Lontarin dément mais...	FAKE	90	10:15														0	0	1	0	0	0	0	0	0	0	0	0				0	0	1	0	0	0	0	0	0	0	0	0
+ref_37	NOSTALGIE	Nathalie Colonie	Les chevaux sont mieux chez eux ! Aurait dit Lontarin	FAKE	53	10:15														0	0	0	0	0	0	0	0	1	0	0	0				0	0	0	0	0	0	0	0	1	0	0	0
+ref_38	NOSTALGIE	Paul Dorade	Beauregard se confie sur son enfance avec son père. Choquant!!	FAKE	62	5:10														0	0	0	0	0	0	0	1	0	0	0	0				0	0	0	0	0	0	0	1	0	0	0	0
+ref_39	ALARMISTE	Derrick Zammour	La fonte des pôles est une manoeuvre des ours blancs pour nous envahir !	FAKE	72	10:15														0	0	0	0	0	0	0	0	0	0	0	1				0	0	0	0	0	0	0	0	0	0	0	1
+ref_40	ALARMISTE	Henry Roséelac	La véritable espèce en voix d'extinction, c'est le respect : Lontarin nous parle.	TRUE	71	1:5														0	0	0	0	0	0	0	0	0	1	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_41	HIPSTER	Jules-Jérôme Landrin	Lontarin veut revenir aux signaux de fumée ! Enquête exlcusive par nos amis de ZebraTM	FAKE	86	5:10														0	1	0	0	0	0	0	0	0	0	0	0				0	1	0	0	0	0	0	0	0	0	0	0
+ref_42	HIPSTER	Claire Rimeline	Z à la Wild Keynote : "Nos enfants marcheront bientôt sur deux jambes."	TRUE	71	10:15														0	0	1	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_43	HIPSTER	Coline Blois	Pourquoi est-ce que Mlle Beauregard devrait devenir végétarienne ?	TRUE	66	1:5														1	0	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_44	HIPSTER	Sybille Riloff	De quel type d'habitat naturel mon enfant a t'il besoin ?	TRUE	57	1:5														1	0	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_45	EVENEMENTIEL	Rita Tutsuko	Mlle Beauregard et Bill Ruffalo : Marions-les ! Notre sondage est unanime. 	TRUE	75	1:5														0	0	0	1	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_46	EVENEMENTIEL	Suzi Grieffe	Mlle Beauregard aurait une vie secrète sur les clubs de la côte !	FAKE	65	10:15														0	0	0	0	0	1	0	0	0	0	0	0				0	0	0	0	0	1	0	0	0	0	0	0
+ref_47	EVENEMENTIEL	Kate Preston	Mlle Beauregard ne serait pas la fille de son père !	FAKE	52	10:15														0	0	0	0	0	1	0	0	0	0	0	0				0	0	0	0	0	1	0	0	0	0	0	0
+ref_48	EVENEMENTIEL	Jess Carlin	Qui est vraiment Mlle Beauregard ? Notre équipe enquête sur ses fourrures préférées.	TRUE	84	1:5														0	0	0	1	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_49	EVENEMENTIEL	Agnès-Sylvie Latoff	Bill Rufallo anonce un concert privé pour tous ses électeurs !	TRUE	62	1:5														0	0	0	1	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_50	NOSTALGIE	Derrick Zammour	Le retour aux coups de cornes comme moyen de paiement doublerait notre économie !	FAKE	81	10:15														0	0	0	0	0	0	0	0	1	0	0	0				0	0	0	0	0	0	0	0	1	0	0	0
+ref_51	NOSTALGIE	Grace Gralin	Les jeunes ne veulent plus chasser. Une enquête objective !	FAKE	59	5:10														0	0	0	0	0	0	0	1	0	0	0	0				0	0	0	0	0	0	0	1	0	0	0	0
+ref_52	NOSTALGIE	Pierre Bernard	"Dans le temps on avait pas besoin de voter !", regrette un orang-outang	TRUE	72	10:15														0	0	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_53	NOSTALGIE	Larry Delamaison	Je vous parle d'un temps que les ourangs outans ne peuvent pas connaître : la tortue se souvient !	TRUE	98	5:10														0	0	0	0	0	0	0	1	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_54	NOSTALGIE	Céline Delindon	Mlle Beauregard anonce s'être réconciliée avec son père !	FAKE	57	10:15														0	0	0	0	0	0	0	0	1	0	0	0				0	0	0	0	0	0	0	0	1	0	0	0
+ref_55	ALARMISTE	Suzi Grieffe	Exclu : Z aurait donné sa langue au chat bot 	TRUE	45	5:10														0	0	0	0	0	0	0	0	0	0	1	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_56	ALARMISTE	David Puget	Pas de répit pour les brèves : Lontarin s'oppose au travail du dimanche.	TRUE	72	5:10														0	0	0	0	0	0	0	0	0	0	1	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_57	ALARMISTE	Derrick Zammour	Lontarin a été renié par l'armée affirme un général inconnu	FAKE	59	10:15														0	0	0	0	0	0	0	0	0	0	0	1				0	0	0	0	0	0	0	0	0	0	0	1
+ref_58	ALARMISTE	Henry Roséelac	Qui est vraiment derrière la raréfaction des points d'eau ? On vous dit tout !	FAKE	78	10:15														0	0	0	0	0	0	0	0	0	0	0	1				0	0	0	0	0	0	0	0	0	0	0	1
+ref_59	ALARMISTE	Eddy Plain	La dynastie Beauregard et le risque d'un régime monarchique.	TRUE	60	5:10														0	0	0	0	0	0	0	0	0	0	1	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_60	HIPSTER	Claire Rimeline	Z a inventé Hakunamatata a seulement 3 ans ! Sa mère témoigne	FAKE	61	10:15														0	0	1	0	0	0	0	0	0	0	0	0				0	0	1	0	0	0	0	0	0	0	0	0
+ref_61	HIPSTER	Grace Gralin	Mlle Beauregard veut couper l'accès au point d'eau ! Z promet de réagir.	FAKE	72	10:15														0	0	1	0	0	0	0	0	0	0	0	0				0	0	1	0	0	0	0	0	0	0	0	0
+ref_62	HIPSTER	Agnès-Sylvie Latoff	En exclu : les meilleurs coins du marais. 	TRUE	42	1:5														1	0	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_63	HIPSTER	Jules-Jérôme Landrin	Les rayures sont elles toujours à la modes ? Les zèbres témoignent	FAKE	66	10:15														0	0	1	0	0	0	0	0	0	0	0	0				0	0	1	0	0	0	0	0	0	0	0	0
+ref_64	HIPSTER	Rita Tutsuko	Plutôt point d'eau ou oasis ? Le vrai débat	TRUE	43	1:5														1	0	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_65	NOSTALGIE	Larry Delamaison	Comment décorer son nid ? On vous dit tout !	TRUE	44	1:5														0	0	0	0	0	0	1	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_66	NOSTALGIE	Kate Preston	Témoignage : Cette méthode de grand mère m'a fait retrouver un corps de gazelle !	TRUE	81	1:5														0	0	0	0	0	0	1	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_67	NOSTALGIE	Coline Blois	Retours aux sources : Où s'abreuver sans crainte	TRUE	48	5:10														0	0	0	0	0	0	0	1	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_68	HIPSTER	Rita Tutsuko	Bill Ruffalo : la classe tranquille d'une nouvelle politique	FAKE	60	5:10														0	1	0	0	0	0	0	0	0	0	0	0				0	1	0	0	0	0	0	0	0	0	0	0
+ref_69	ALARMISTE	Derrick Zammour	"Je dis ce que tout le monde pense tout bas : la savane n'est pas une plaine pour l'herbe verte !"	TRUE	98	10:15														0	0	0	0	0	0	0	0	0	0	0	1				0	0	0	0	0	0	0	0	0	0	0	0
+ref_70	NOSTALGIE	Yvon Calva	De la déliquessence progressive de la classe moyenne.	FAKE	53	10:15														0	0	0	0	0	0	0	0	1	0	0	0				0	0	0	0	0	0	0	0	1	0	0	0
+ref_71	EVENEMENTIEL	Suzi Grieffe	Un nouveau regard sur la politique : la fille dépoussière le parti du père !	TRUE	76	5:10														0	0	0	0	1	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_72	ALARMISTE	Suzi Grieffe	Des vagues migratoires vont entraîner un grand remplacement dans la savane.	FAKE	75	5:10														0	0	0	0	0	0	0	0	0	0	1	0				0	0	0	0	0	0	0	0	0	0	1	0
+ref_73	EVENEMENTIEL	David Puget	Sexisme orienté : des lionnes interdites d'entrée à un point d'eau !	FAKE	68	5:10														0	0	0	0	1	0	0	0	0	0	0	0				0	0	0	0	1	0	0	0	0	0	0	0
+ref_74	EVENEMENTIEL	Lise Lucie	Bill Ruffalo : Ma voix vous fait pleurer ? Donnez moi la vôtre !	TRUE	64	5:10														0	0	0	0	1	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_75	ALARMISTE	Derrick Zammour	Il faut fermer les oasis. Il y a des agressions et des attaques et de la V10L3NC3	FAKE	81	10:15														0	0	0	0	0	0	0	0	0	0	0	1				0	0	0	0	0	0	0	0	0	0	0	1
+ref_76	EVENEMENTIEL	Rita Tutsuko	[Indiscrétion] Mlle Beauregard à Léo : "Ne me tweet pas"	TRUE	56	10:15														0	0	0	0	0	1	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_77	EVENEMENTIEL	Suzi Grieffe	Le dernier single de Bill serait un plagiat !	FAKE	45	5:10														0	0	0	0	1	0	0	0	0	0	0	0				0	0	0	0	1	0	0	0	0	0	0	0
+ref_78	NOSTALGIE	Coline Blois	"Il vit en toi" - Mlle Beauregard il est temps d'écouter votre père !	TRUE	69	5:10														0	0	0	0	0	0	0	1	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_79	HIPSTER	Claire Rimeline	Alerte ! Nous ne sommes pas à l'abri d'une pénurie de thé vert !	TRUE	64	10:15														0	0	1	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_80	ALARMISTE	Suzi Grieffe	"Je voudrais déjà être roi !" Mlle Beauregard n'est elle pas trop jeune pour gouverner ?	FAKE	88	5:10														0	0	0	0	0	0	0	0	0	0	1	0				0	0	0	0	0	0	0	0	0	0	1	0
+ref_81	HIPSTER	Sybille Riloff	Notre futur président prend il du gluten ? Les lecteurs s'inquiètent !	FAKE	70	10:15														0	0	1	0	0	0	0	0	0	0	0	0				0	0	1	0	0	0	0	0	0	0	0	0
+ref_82	HIPSTER	Rita Tutsuko	Si tu ne joues pas du rock à 4 pattes, t'as rien compris à l'esprit du rock.	TRUE	76	5:10														0	1	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_83	HIPSTER	Claire Rimeline	OMG ! Mlle Beauregard serait pro OGM !	FAKE	38	10:15														0	0	1	0	0	0	0	0	0	0	0	0				0	0	1	0	0	0	0	0	0	0	0	0
+ref_84	ALARMISTE	Henry Roséelac	Suzi Grieffe : "Ce qui préoccupe les électeurs ? L'insécurité et la sécheresse évidemement !"	TRUE	93	10:15														0	0	0	0	0	0	0	0	0	0	0	1				0	0	0	0	0	0	0	0	0	0	0	0
+ref_85	EVENEMENTIEL	Claire Rimeline	David Guepard apporte sa voix à Bill Buffalo !	FAKE	46	5:10														0	0	0	0	1	0	0	0	0	0	0	0				0	0	0	0	1	0	0	0	0	0	0	0
+ref_86	NOSTALGIE	Pierre Bernard	La fuite des troupeaux face aux flux migratoires estivaux	FAKE	57	5:10														0	0	0	0	0	0	0	1	0	0	0	0				0	0	0	0	0	0	0	1	0	0	0	0
+ref_87	EVENEMENTIEL	Suzi Grieffe	Flash : après sa rupture avec la lionne, Léo part avec Z ! [photo]	FAKE	66	10:15														0	0	0	0	0	1	0	0	0	0	0	0				0	0	0	0	0	1	0	0	0	0	0	0
+ref_88	HIPSTER	Kate Preston	Des preuves que les prédateurs élèvent des herbivores en cage !! 	FAKE	71	5:10														0	1	0	0	0	0	0	0	0	0	0	0				0	1	0	0	0	0	0	0	0	0	0	0
+ref_89	HIPSTER	Nathalie Colonie	Quand la presse relaye des fake news, c'est la démocratie qui se meurt.	TRUE	71	5:10														0	1	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_90	NOSTALGIE	Jules-Jérôme Landrin	Baobab 'n' Breakfast : les meilleurs arbres où passer la nuit.	TRUE	62	1:5														0	0	0	0	0	0	1	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_91	HIPSTER	Eric Scruter	Z accusé de harcèlement sexuel et de discrimination raciale, aucune plainte déposée !	FAKE	85	10:15														0	0	1	0	0	0	0	0	0	0	0	0				0	0	1	0	0	0	0	0	0	0	0	0
+ref_92	NOSTALGIE	Pierre Bernard	Terroir en danger : des arrangements politiques pour éradiquer nos traditions !	FAKE	79	10:15														0	0	0	0	0	0	0	0	1	0	0	0				0	0	0	0	0	0	0	0	1	0	0	0
+ref_93	HIPSTER	Nathalie Colonie	Il y a un glissement organisé de la politique vers la droite. L'appât du gain est insupportable.	FAKE	92	5:10														0	1	0	0	0	0	0	0	0	0	0	0				0	1	0	0	0	0	0	0	0	0	0	0
+ref_94	HIPSTER	Coline Blois	Voulons nous vraiment d'une démocratie ? Un micro caché chez Mlle Beauregard nous terrifie !	FAKE	92	5:10														0	1	0	0	0	0	0	0	0	0	0	0				0	1	0	0	0	0	0	0	0	0	0	0
+ref_95	ALARMISTE	Grace Gralin	Bill lâché par son fidèle impresario !	TRUE	38	1:5														0	0	0	0	0	0	0	0	0	1	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_96	ALARMISTE	Lise Lucie	Un système de caisse noire mis à jour au Parlement du Rocher aux lions.	TRUE	71	1:5														0	0	0	0	0	0	0	0	0	1	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_97	HIPSTER	Henry Roséelac	Ruffalo promet lui aussi de respecter le cycle de la vie !	TRUE	58	5:10														0	1	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_98	NOSTALGIE	Yvon Calva	"Le vieux lion est mou, il accepte de l'argent d'autres pays", témoignage d'un fachochère.	FAKE	90	10:15														0	0	0	0	0	0	0	0	1	0	0	0				0	0	0	0	0	0	0	0	1	0	0	0
+ref_99	EVENEMENTIEL	Henry Roséelac	La lionne Beauregard cherche la petite bête : pour la manger ?	FAKE	62	5:10														0	0	0	0	1	0	0	0	0	0	0	0				0	0	0	0	1	0	0	0	0	0	0	0
+ref_100	EVENEMENTIEL	Dan Crawford	Lontarin est un de ces rhinos féroces envers les éléphants, nous confie... sa femme !	FAKE	85	10:15														0	0	0	0	0	1	0	0	0	0	0	0				0	0	0	0	0	1	0	0	0	0	0	0
+ref_101	HIPSTER	Larry Delamaison	Ruffalo : "Le cycle de la vie n'est qu'une catchphrase pour Beauregard"	TRUE	71	5:10														0	1	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_102	HIPSTER	Valérie Lesplantes	Plongée dans le fief de Bill Ruffalo : rock et politique animaliste.	TRUE	68	5:10														0	1	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_103	NOSTALGIE	Jules-Jérôme Landrin	Beauregard et sa garde rapprochée : les lionnes chassent les fake news qui se préparent.	TRUE	88	1:5														0	0	0	0	0	0	1	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_104	EVENEMENTIEL	Agnès-Sylvie Latoff	Z aurait évité une tentative de hacking. Ses proches confient : "il est serein".	TRUE	80	10:15														0	0	0	0	0	1	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_105	EVENEMENTIEL	Paul Dorade	Le piratage d'Oasis Finder vu de l'intérieur !	TRUE	46	10:15														0	0	0	0	0	1	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_106	NOSTALGIE	Claire Rimeline	Bill reprend a capella sa chanson fétiche "La vie à Cuatic"	TRUE	59	10:15														0	0	0	0	0	0	0	0	1	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_107	NOSTALGIE	Louise Salami	Bill, il était une fois "une bête de scène" 	TRUE	44	10:15														0	0	0	0	0	0	0	0	1	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_108	ALARMISTE	Kate Preston	Plongée dans les coulisses de campagne de Ruffalo : sexe, drugs, rock et carnisme.	FAKE	82	10:15														0	0	0	0	0	0	0	0	0	0	0	1				0	0	0	0	0	0	0	0	0	0	0	1
+ref_109	ALARMISTE	Sybille Riloff	[Lanceur d'alerte] Beauregard, le pouvoir, les lobbys : zones de flou	TRUE	69	1:5														0	0	0	0	0	0	0	0	0	1	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_110	ALARMISTE	Eric Scruter	Oasis Papers : des comptes dans les Îles Caïman. Les crocos mis en cause.	FAKE	73	10:15														0	0	0	0	0	0	0	0	0	0	0	1				0	0	0	0	0	0	0	0	0	0	0	1
+ref_111	ALARMISTE	Derrick Zammour	Les présidentielles s'annoncent plus violentes que jamais !	TRUE	59	1:5														0	0	0	0	0	0	0	0	0	1	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_112	ALARMISTE	Céline Delindon	Le changement de direction de Bubble news est il pour le meilleur ?	TRUE	96	1:5														0	0	0	0	0	0	0	0	0	1	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_113	ALARMISTE	Jess Carlin	Bubble news a la tête sous l'eau !	TRUE	34	1:5														0	0	0	0	0	0	0	0	0	1	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_114	ALARMISTE	Suzi Grieffe	Bill Ruffalo promet de se retirer de l'accord du puit !	TRUE	55	1:5														0	0	0	0	0	0	0	0	0	1	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_115	HIPSTER	Rita Tutsuko	Miss Croco reçoit le prix de la meilleure scène dramatique. Du vrai cinéma d'auteur indépendant.	FAKE	96	10:15														0	0	1	0	0	0	0	0	0	0	0	0				0	0	1	0	0	0	0	0	0	0	0	0
+ref_116	EVENEMENTIEL	Rita Tutsuko	Mlle Beau Regard se confie :J'ai mon "Animal List" !	TRUE	52	1:5														0	0	0	1	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_117	EVENEMENTIEL	Jess Carlin	Ruffalo nous dit tout de A à Z !	TRUE	32	1:5														0	0	0	1	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_118	NOSTALGIE	Nathalie Colonie	Z veut diminuer la retraite des lions ! Beauregard dénonce !	FAKE	60	5:10														0	0	0	0	0	0	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_119	EVENEMENTIEL	Céline Delindon	Fabiouss rend régulièrement visite à sa maîtresse et monopolise une escorte de 2 policiers !	FAKE	92	10:15														0	0	0	0	0	1	0	0	0	0	0	0				0	0	0	0	0	1	0	0	0	0	0	0
+ref_120	ALARMISTE	Pierre Bernard	Ruffalo a encore un accès de colère lorsqu'on l'interroge sur le carnisme. Indigne !	FAKE	84	10:15														0	0	0	0	0	0	0	0	0	0	0	1				0	0	0	0	0	0	0	0	0	0	0	1
+ref_121	ALARMISTE	Derrick Zammour	Les chiffres le prouvent, les statistiques sur lesquelles je compte, c'est pas des maths.	FAKE	89	10:15														0	0	0	0	0	0	0	0	0	0	0	1				0	0	0	0	0	0	0	0	0	0	0	1
+ref_122	NOSTALGIE	Grace Gralin	L'esprit grégaire se perd affirme Lontarin !	TRUE	44	5:10														0	0	0	0	0	0	0	1	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_123	NOSTALGIE	Larry Delamaison	Aidez moi ! Mes petits enfants préfèrent rester dans leur caverne que de venir me voir !	TRUE	88	5:10														0	0	0	0	0	0	0	1	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_124	NOSTALGIE	David Puget	"C'était le bon temps", le disque qui bat tous les records !	TRUE	60	10:15														0	0	0	0	0	0	0	1	0	0	0	0				0	0	0	0	0	0	0	1	0	0	0	0
+ref_125	EVENEMENTIEL	Rita Tutsuko	Toutes les photos du tapis rouge, qui remportera le palmier d'or ?	TRUE	66	10:15														0	0	0	0	0	1	0	0	0	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0
+ref_126	NOSTALGIE	Paul Dorade	10 jeux d'enfant qui ont disparu	TRUE	32	10:15														0	0	0	0	0	0	0	0	1	0	0	0				0	0	0	0	0	0	0	0	0	0	0	0

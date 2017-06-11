@@ -1,0 +1,113 @@
+N°	COULEUR	JOURNALISTE	ARTICLE	STATUT	NB CARAC		CODE COULEUR	POLITIQUES	NOMBRE		JOURNALISTES
+ref_1	EVENEMENTIEL	Rita Tutsuko	10 trucs bizarres que nos politiques font, la 3e va vous surprendre !	TRUE	69		EVENEMENTIEL	Lion & Buffle	6		Rita Tutsuko
+ref_2	ALARMISTE	Suzi Grieffe	La vérité sur les propositions de Mr Lontarin	TRUE	45		NOSTALGIE	Rinho & Lion	4		Pierre Bernard
+ref_3	ALARMISTE	Valérie Lesplantes	Les conséquences environnementales de la production de cacahuète	TRUE	64		ALARMISTE	Rinho & Zebre	5		Dan Crawford
+ref_4	NOSTALGIE	Céline Delindon	Les 10 recettes de nos grands-mères	TRUE	35		HIPSTER	Zebre & Buffle	5		Claire Rimeline
+ref_5	HIPSTER	Claire Rimeline	Quel type de quinoa êtes vous ?	TRUE	31		META	Neutre	4		Suzi Grieffe
+ref_6	HIPSTER	Dan Crawford	Ou trouver les meilleurs vélos pour quadrupède ?	TRUE	48						Grace Gralin
+ref_7	EVENEMENTIEL	Grace Gralin	Trahison ! La dernière conquête de Bill Ruffalo se confie !	TRUE	59			TOTAL	24		Coline Blois
+ref_8	NOSTALGIE	Pierre Bernard	La part du lion : que reste-t-il de la politique de Beauregard dans le programme de sa fille ?	TRUE	94						Valérie Lesplantes
+ref_9	ALARMISTE	Kate Preston	Ce que ne vous dit pas la presse : la vérité sur les dessous du complot mammifero-félidé	TRUE	88						David Puget
+ref_10	META	Eric Scruter	L'état de la presse aujourd'hui !	TRUE	33		PERSO				Louise Salami
+ref_11	HIPSTER	Rita Tutsuko	Pour une société plus participative	TRUE	35		Lion // M. Beauregard (surnomé B.R.)				Lionel Maurin
+ref_12	META	Dan Crawford	Les éditorialistes sont-il vraiment plus éclairés ?	TRUE	51		Lionne // Mademoiselle Beauregard				Sybille Riloff
+ref_13	NOSTALGIE	Valérie Lesplantes	"Aujourd'hui, dans la rue, c'est moins convivial", un témoignage ordinaire	TRUE	74		Rhino // Lontarin				Kate Preston
+ref_14	EVENEMENTIEL	Jess Carlin	La vie royale : comment Beauregard gère sa vie de femme célibataire	TRUE	67		Buffle // Bill Ruffalo				Jess Carlin
+ref_15	ALARMISTE	Suzi Grieffe	"Le crime a augmenté pour moi, c'est évident", un témoignage édifiant	TRUE	69		Zèbre // Hike				Paul Dorade
+ref_16	HIPSTER	Dan Crawford	La levée de fond de ZebraTM atteint des records !	TRUE	49						Céline Delindon
+ref_17	ALARMISTE	Valérie Lesplantes	Affaire des marais pollués : les hyènes montrent patte blanche	TRUE	62						Eric Scruter
+ref_18	HIPSTER	Claire Rimeline	Les coins les plus branchés de la savane pour les vacances	TRUE	58						Derrick Zammour
+ref_19	EVENEMENTIEL	Kate Preston	Reportage photo : tension entre Mlle Beauregard et son père	TRUE	59						Nathalie Colonie
+ref_20	META	Eric Scruter	Qui finance qui ? Infographie des newsgroups. 	TRUE	46						Agnès-Sylvie Latoff
+ref_21	EVENEMENTIEL	Grace Gralin	Indiscrétions dans la famille royale, notre enquête exclusive !	TRUE	63						Larry Delamaison
+ref_22	META	Eric Scruter	Economie : Comparaison des programmes des candidats	TRUE	51						Jules-Jérôme Landrin
+ref_23	NOSTALGIE	Paul Dorade	Sortie de la 9e édition de L'histoire de la vie, revue et corrigée par Mr Lontarin	TRUE	82						Yvon Calva
+ref_24	EVENEMENTIEL	Teresita Gome	Le film préféré  de Beau Regard "La galette de rois"	TRUE	52						Eddy Plain
+ref_25				Fake	0						Lise Lucie
+ref_26					0						Henry Roséelac
+ref_27					0						
+ref_28					0						
+ref_29					0						
+ref_30					0						
+ref_31					0						
+ref_32					0						
+ref_33					0						
+ref_34					0						
+ref_35					0						
+ref_36					0						
+ref_37					0						
+ref_38					0						
+ref_39					0						
+ref_40					0						
+ref_41					0						
+ref_42					0						
+ref_43					0						
+ref_44					0						
+ref_45					0						
+ref_46					0						
+ref_47					0						
+ref_48					0						
+ref_49					0						
+ref_50					0						
+ref_51					0						
+ref_52					0						
+ref_53					0						
+ref_54					0						
+ref_55					0						
+ref_56					0						
+ref_57					0						
+ref_58					0						
+ref_59					0						
+ref_60					0						
+ref_61					0						
+ref_62					0						
+ref_63					0						
+ref_64					0						
+ref_65					0						
+ref_66					0						
+ref_67					0						
+ref_68					0						
+ref_69					0						
+ref_70					0						
+ref_71					0						
+ref_72					0						
+ref_73					0						
+ref_74					0						
+ref_75					0						
+ref_76					0						
+ref_77					0						
+ref_78					0						
+ref_79					0						
+ref_80					0						
+ref_81					0						
+ref_82					0						
+ref_83					0						
+ref_84					0						
+ref_85					0						
+ref_86					0						
+ref_87					0						
+ref_88					0						
+ref_89					0						
+ref_90					0						
+ref_91					0						
+ref_92					0						
+ref_93					0						
+ref_94					0						
+ref_95					0						
+ref_96					0						
+ref_97					0						
+ref_98					0						
+ref_99					0						
+					0						
+					0						
+					0						
+					0						
+					0						
+					0						
+					0						
+					0						
+					0						
+					0						
+					0						
+					0						
+					0						

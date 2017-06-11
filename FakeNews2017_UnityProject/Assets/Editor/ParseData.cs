@@ -28,13 +28,13 @@ public class ParseData
 
 			//
 			int id = int.Parse (cardObject.reference.Split ('_')[1]);
-			string imagePath = "Assets/NewsObject/Vignettes/Vignettes/"  +id  + ".png";
+			string imagePath = "Assets/NewsObjects/Vignettes/Vignettes/"  +id  + ".png";
 
 			Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite> (imagePath);
 
 			if (sprite == null)
 			{
-				sprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/NewsObject/Vignettes/Vignettes/0.png");
+				sprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/NewsObjects/Vignettes/Vignettes/0.png");
 			}
 
 			cardObject.image = sprite;
@@ -117,8 +117,8 @@ public class ParseData
 		}
 		else if (card[col3].Length > 0 && card[col4].Length > 0)
 		{
-			CreateNonRandomCard (day, card [col3], baseRef + "_SI + --");
-			CreateNonRandomCard (day, card [col4], baseRef + "_SI + -+");
+			CreateNonRandomCard (day, card [col3], baseRef + "_SI + +-");
+			CreateNonRandomCard (day, card [col4], baseRef + "_SI + ++");
 		}		
 	}
 
@@ -130,7 +130,7 @@ public class ParseData
 		card.lastDay = day;
 		card.family = CardFamily.META;
 		card.author = "ASN";
-		card.image = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/NewsObject/Vignettes/Vignettes/0.png");
+		card.image = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/NewsObjects/Vignettes/Vignettes/0.png");
 		AssetDatabase.CreateAsset (card, "Assets/NonRandom/Card_" + reference + "_" + day + ".asset");
 	}
 }
