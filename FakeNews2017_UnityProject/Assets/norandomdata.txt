@@ -1,0 +1,21 @@
+DAY	Nb de choix	Nb de fake news	Commentaire	Article ASN			Z				Lontarin				Mlle Beauregard				Bill Ruffalow				
+				Si peu de fake news diffusées	Si un peu de Fake News diffusées	Si beaucoup de fake news diffusées	Si -		Si +		Si -		Si +		Si -		Si +		Si -		Si +		
+							Si - -	Si - +	Si + -	Si + +	Si - -	Si - +	Si + -	Si +	Si - 	Si +	Si - 	Si +	Si - 	Si +	Si - 	Si +	
+0	1	0		Depeche ASN : Fini de buller chez Bubble News ! 2 semaines avant les élections, le nouveau redac chef Colin McFish inaugure la nouvelle édition du journal préféré des habitants de la jungle !																			
+1	4	0					Exclu : Le jour du lancement de son app Oasis Finder, Z annonce sa candidature aux élections !				Lontarin annonce sa candidature lors du meeting annuel des anciens généraux !				Alors qu'elle annonce sa candidature à la succession de son père, Beauregard n'a d'yeux que pour... un léopard !				Le jour où Bill se présente aux élections, un ancien single refait surface.				
+2	6	0																					
+3	8	0																					
+4	1	0		Depeche ASN : Après une période de transition difficile, Bubble news se lit dans toute la savane ! Les lecteurs témoignent. 																			
+5	12	1 or 0					Attention au Zebre de Troie : Un expert découvre un spyware dans Oasis Finder !		Brousse sans frontière salut l'application du philantropiste Z !														
+6	14	1 or 2									Scandale ! La campagne de Lontarin a été financée de moitié par l'armée !		Pour sa charge héroïque Lontarin reçoit la grande médaille du baobab. 										
+7	16	4													SCOOP ! Mlle Beauregard proche du célibat ! "Si Léo part, j'arrête la politique !"		Face à son père, la lionne marque son territoire : "Ma vie avec Léo ne regarde que moi !"						
+8	1	0		Depeche ASN : Sous l'impulsion de Mr McFish Bubble News devient le journal d'investigation du moment !	Depeche ASN : Il y a t'il encore de l'info chez Bubble News ? Les lecteurs s'interrogent 	Depeche ASN : Bubble News ne sert plus qu'à emballer des cornets de frites. 													Devant le flop, Bill s'explique :"Je n'étais pas le parolier". Le Buffle bluff-t-il ?		Je suis un Rebelle Rebelle ! Qui l'ignorait ?		
+																							
+9	16	selon day 8																					
+10	16	6					Les Oasis privés favorisés par Z	Je ne serais pas rayé de la vie politique ! Z réplique !	Oasis Finder hacké par des ours polaires ! Nos datas sont en danger !	Brousse sans frontière salut l'application du philantropiste Z ! 													
+11	16	8									Lontarrin derrière les écrous après une tentative de coup d'état avec les généraux retraités !	Est-ce ma faute si je suis un héros de guerre ? Lontarin se justifie !	Exclu: Lontarin interné en maison de repos, il se passionne pour le tricot ! [photos]	La jeunesse avec Lontarin : "Ils ont du nez, je vais gagner !"									Si +
+12	1	0													Face au conflit familial, l'électorat de Beauregard père déserte les meetings de sa fille.	Beauregard s'extirpe (enfin) du carcan familial : "Cela fait longtemps que le lion, en lui, est mort"	Son fiancé Léo part, Mlle Beauregard tente de garder la tête haute.	Mlle Beauregard mâte le vieux lion : son père accepte Léo !					
+13	20	10																	Bill est au plus bas des charts.	Bill ressort un single juste avant les élections 	Bill désespéré promet un single gratuit à  ses électeurs 	Bill transforme un meeting politique en concert !	
+14	1	0					Z prend la place du vieux lion à la tête de la jungle et remplace les weekends par des start-up day !				Lontarrin président ! Il déclare l'état d'urgence morale dans son discours d'investiture !				Beauregard présidente : elle tient une tribune bien sentie sur la presse sexiste qui s'est acharnée sur elle.				Bill Ruffalow élu président à la surprise générale : "c'est aussi bon que d'être en tête des charts !"				
+																							
+(Total = 15)																							
