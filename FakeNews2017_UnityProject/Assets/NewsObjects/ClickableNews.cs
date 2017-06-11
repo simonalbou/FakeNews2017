@@ -90,8 +90,6 @@ public class ClickableNews : MonoBehaviour {
 
 		family = card.family;
 
-		//Debug.Log(card.family);
-
 		if (family == CardFamily.ALARMISTE)
 			selfRenderer.sprite = alarmistColor;
 		if (family == CardFamily.EVENEMENTIEL)
@@ -108,6 +106,5 @@ public class ClickableNews : MonoBehaviour {
 
 		author.text = card.author;
 		picture.sprite = card.image;
-		// we should also change template if no image is loaded, like, alternate with two contents
 	}
 }
