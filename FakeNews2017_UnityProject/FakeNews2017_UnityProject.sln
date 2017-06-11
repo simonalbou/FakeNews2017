@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeNews2017_UnityProject.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeNews2017_UnityProject.CSharp.Editor.Plugins", "FakeNews2017_UnityProject.CSharp.Editor.Plugins.csproj", "{82DAB603-B5A1-0CF2-5A20-2AEC27105005}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeNews2017_UnityProject.CSharp.Editor", "FakeNews2017_UnityProject.CSharp.Editor.csproj", "{371584E9-6083-59D9-4C7B-7B5E05DB8729}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{82DAB603-B5A1-0CF2-5A20-2AEC27105005}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82DAB603-B5A1-0CF2-5A20-2AEC27105005}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82DAB603-B5A1-0CF2-5A20-2AEC27105005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{371584E9-6083-59D9-4C7B-7B5E05DB8729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{371584E9-6083-59D9-4C7B-7B5E05DB8729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{371584E9-6083-59D9-4C7B-7B5E05DB8729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{371584E9-6083-59D9-4C7B-7B5E05DB8729}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

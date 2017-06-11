@@ -100,7 +100,8 @@ public class NewsPoolManager : MonoBehaviour
 		{
 			curDay++;
 			curActivatedNews = 0;
-			StartCoroutine(AdvanceToNextDay());
+			if(curDay < days.Length)
+				StartCoroutine(AdvanceToNextDay());
 		}
 	}
 
