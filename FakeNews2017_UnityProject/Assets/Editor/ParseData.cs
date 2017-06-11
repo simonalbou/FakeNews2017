@@ -26,6 +26,13 @@ public class ParseData
 			cardObject.title = card [3];
 			cardObject.isFakeNews = !(card [4] == "TRUE");
 
+			string[] firstlastday = card [6].Split (':');
+			if (firstlastday.Length == 2)
+			{
+				cardObject.firstDay = int.Parse( firstlastday [0]) - 1;
+				cardObject.lastDay = int.Parse (firstlastday [1]) - 1;
+			}
+
 			AssetDatabase.CreateAsset (cardObject, "Assets/Cards/Card_" + cardObject.reference + ".asset");
 			AssetDatabase.SaveAssets ();
 		}
