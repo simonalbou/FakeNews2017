@@ -18,6 +18,7 @@ public class NewsPoolManager : MonoBehaviour
 	// pooling
 	public static NewsPoolManager instance;
 	public Spawner spawner;
+	public Resetter resetter;
 	public StareCamera inputHolder;
 	public ClickableNews[] pool;
 
@@ -71,7 +72,7 @@ public class NewsPoolManager : MonoBehaviour
 	public void ClickSomeNews(ClickableNews cn)
 	{
 		// An animation has been launched in ClickableNews.cs. From this singleton, click input should be shutdown.
-		inputHolder.PutOnCooldown(1.0f);
+		inputHolder.PutOnCooldown(0.7f);
 
 		// How much exp does the color gain ?
 		float exp = curDay * multiplierPerArticle;
@@ -108,8 +109,9 @@ public class NewsPoolManager : MonoBehaviour
 		{
 			curDay++;
 			curActivatedNews = 0;
-			if (curDay < days.Length-1)
+			if (curDay < days.Length)
 				MoveOntoNextDay(); //StartCoroutine(AdvanceToNextDay());
+			else resetter.enabled = true;
 		}
 	}
 
