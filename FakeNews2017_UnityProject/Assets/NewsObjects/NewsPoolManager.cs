@@ -108,7 +108,7 @@ public class NewsPoolManager : MonoBehaviour
 		{
 			curDay++;
 			curActivatedNews = 0;
-			if (curDay < days.Length)
+			if (curDay < days.Length-1)
 				MoveOntoNextDay(); //StartCoroutine(AdvanceToNextDay());
 		}
 	}
@@ -171,8 +171,18 @@ public class NewsPoolManager : MonoBehaviour
 				cardsOfTheDay.TrimExcess();
 				//cardsOfTheDay = new List<Card>();
 				for (int i = 0; i < allRandomCards.Length; i++)
-					if (allRandomCards[i].firstDay <= curDay && allRandomCards[i].lastDay >= curDay)
-						cardsOfTheDay.Add(allRandomCards[i]);
+				{
+					if (curDay == 14) // TEMP
+					{
+						if (allRandomCards[i].firstDay == 15)
+							cardsOfTheDay.Add(allRandomCards[i]);
+					}
+					else
+					{
+						if (allRandomCards[i].firstDay <= curDay && allRandomCards[i].lastDay >= curDay)
+							cardsOfTheDay.Add(allRandomCards[i]);
+					}
+				}
 
 				state++;
 			}
